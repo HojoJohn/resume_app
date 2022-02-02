@@ -1,0 +1,210 @@
+body{
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    max-width: 920px; margin: auto; padding: 2%; 
+    font-family: "Times New Roman", Arial;
+    
+}
+img {
+    width: 100%;
+}
+.header{
+    background-image: url("assets/images/intro_FD.jpg");
+    
+  background-size: 100% 100%;
+    background-color: rgb(52, 66, 78);
+    width: 100%;
+  height: 450px;
+  grid-gap: .5em;
+}
+.nav{
+background-color: rgb(63, 124, 177);
+flex-direction: row;
+display: flex; 
+position: sticky;
+position: -webkit-sticky;   
+
+justify-content: space-around;
+
+	align-items: center; 
+
+    overflow: hidden;
+    grid-gap: .5em;
+  }
+  
+
+  .nav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  
+  .nav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+
+
+.footer{
+    height: 150px;
+    background-color: rgb(31, 41, 49);
+    flex-direction: column;
+    display: flex;
+    width: 100%;
+    height: 288px;
+    background-image: url("assets/images/footer.jpg");
+    background-repeat: no-repeat;
+    
+
+    
+}
+.myButton {
+	box-shadow:inset 1px 0px 0px 0px #4574d1;
+	background:linear-gradient(to bottom, #325399 5%, #5972a7 100%);
+	background-color:#325399;
+	border:1px solid #232e4d;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Times New Roman;
+	font-size:20px;
+	font-weight:bold;
+	padding:10px 12px;
+    text-decoration:none;
+    height: 20px;
+    width: 70px;
+}
+.myButton:hover {
+	background:linear-gradient(to bottom, #5972a7 5%, #325399 100%);
+	background-color:#5972a7;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+.chapter{
+    padding: 1em;
+    flex-direction: column;
+    display: flex;
+}
+.theyButton {
+	box-shadow:inset 1px 0px 0px 0px #4574d1;
+	background:linear-gradient(to bottom, #325399 5%, #5972a7 100%);
+	background-color:#325399;
+	border:1px solid #232e4d;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Times New Roman;
+	font-size:20px;
+	font-weight:bold;
+	padding:10px 12px;
+    text-decoration:none;
+    height: 30px;
+    width: 70px;
+}
+.theyButton:hover {
+	background:linear-gradient(to bottom, #5972a7 5%, #325399 100%);
+	background-color:#5972a7;
+}
+.theyButton:active {
+	position:relative;
+	top:1px;
+}
+
+
+.theButton {
+	box-shadow:inset 1px 0px 0px -50px #000000;
+	background:linear-gradient(to bottom, #f0f022 5%, #bd317c 100%);
+	background-color:#f0f022;
+	border:1px solid #000000;
+	display:inline-block;
+	cursor:pointer;
+	color:#000000;
+	font-family:Times New Roman;
+	font-size:20px;
+	font-weight:bold;
+	padding:10px 12px;
+    text-decoration:none;
+    height: 20px;
+    width: 80px;
+}
+.theButton:hover {
+	background:linear-gradient(to bottom, #bd317c 5%, #f0f022 100%);
+	background-color:#bd317c;
+}
+.theButton:active {
+	position:relative;
+	top:1px;
+}
+
+        
+
+#intro {
+    background-color: rgb(255, 255, 255);
+    
+}
+.wrapper {
+  display: grid;
+  
+    grid-template-columns: 1fr 1fr ;
+ 
+  
+    grid-template-areas:
+    'header header '
+      'nav nav '
+      'main main'
+      'about about'
+      'chapter chapter'
+      
+      'footer footer ';
+}
+.nav { grid-area: nav; }
+.header { grid-area: header; }
+.footer { grid-area: footer; }
+.main { grid-area: main; }
+.about { grid-area: about; }
+.chapter { grid-area: chapter; }
+.video { grid-area: video; }
+html { overflow-y: scroll;}
+
+@media only screen and (min-width: 600px) {
+    
+        .side2 { grid-area: side2; }
+        .side1 { grid-area: side1; }
+        .main { grid-area: main; }
+        .header { grid-area: header; }
+        .footer { grid-area: footer; }
+        .nav { grid-area: nav; }
+        .about { grid-area: about; }
+        .chapter { grid-area: chapter; }
+        .video { grid-area: video; }
+        .resources { grid-area: resources; }
+
+
+.wrapper {
+    display: grid;
+
+   grid-template-columns: 1fr 1fr 1fr 1fr;  
+
+   
+     grid-template-areas:
+    "header header header header"
+    "nav nav nav nav"
+    "side1 main main side2"
+    "side1 main main side2"
+    "side1 about about side2"
+    "side1 chapter chapter side2"
+    "side1 video video side2"
+    "side1 video video side2"
+    "side1 resources resources side2"
+    "footer footer footer footer";
+  
+    } 
+    
+
+}
