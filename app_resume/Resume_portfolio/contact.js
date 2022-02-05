@@ -1,3 +1,6 @@
-$(".menu-activator").on("click", function() {
-    $("body").toggleClass("menu-active");
-  });
+const toggleButton = document.createElementByClassName('toggle-button')[0]
+const navbarLinks = document.createElementByClassName('navbar-link')[0]
+
+toggleButton.addEventListener('click',() =>{
+    navbarLinks.classList.toggle('active')
+})
