@@ -3,19 +3,21 @@ body{
     padding: 0;
     box-sizing: border-box;
     font-family: 'times', 'sans-seriff';
+    background-color: #1c1d25;
 }
 .navbar {
     display: flex;
     position: relative;
     justify-content: space-between;
     align-items: center;
-    background-color: #333;
+    background-color: #1c1d25;
     color: white;
 }
 
-.brand-title {
-    font-size: 1.5rem;
-    margin: .5rem;
+.logo{
+    
+    margin: 30px;
+    height: 100px;
 }
 
 .navbar-links {
@@ -78,9 +80,12 @@ body{
 .contact .content h2 {
     font-size: 36px;
     font-weight: 500;
+    color: white;
+
 
 }
 .contact .content p {
+    color: white;
     
     font-weight: 300;
     
@@ -91,12 +96,14 @@ body{
     justify-content: center;
     align-items: center;
     margin-top: 30px;
+    color: white;
 }
 .container .contactInfo {
 
     width: 50%;
     display: flex;
     flex-direction: column;
+    color: white;
 
 }
 .container .contactInfo .box{
@@ -104,6 +111,7 @@ body{
     position: relative;
     padding: 20px 0;
     display: flex;
+    color: white;
     
 }
 .container .contactInfo .box .icon{
@@ -123,10 +131,12 @@ body{
     font-size:16px;
     flex-direction: column;
     font-weight: 300;
+    color: white;
 }
 .container .contactInfo .box .text h3 {
 
     font-weight: 500;
+    color: white;
 
 }
 
