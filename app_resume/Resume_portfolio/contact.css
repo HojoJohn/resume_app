@@ -11,9 +11,18 @@ body{
     justify-content: space-between;
     align-items: center;
     background-color: #1c1d25;
+    
     color: white;
+   
+    
 }
-
+.hero{ 
+    background-color: #1c1d25;
+    height: 25vh;
+    color: white;
+    font-size: 40px;
+    width: 100%;
+}
 .logo{
     
     margin: 30px;
@@ -144,6 +153,7 @@ body{
 
     width: 40%;
     padding: 40px;
+    background-color: white;
 
 }
 .contactForm h2{
