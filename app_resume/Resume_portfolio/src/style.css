@@ -30,7 +30,7 @@ section{
     align-items: center;
     
 }
-.button{
+button{
     width: 200px;
     height: 55px;
     border-radius: 30px;
@@ -40,10 +40,10 @@ section{
     font-weight: 300;
     
 }
-.button:hover{
+button:hover{
     background-color: rgb(16, 59, 138);
 }
-.button:active{
+button:active{
     background-color: rgb(83, 81, 81);
     
 }
